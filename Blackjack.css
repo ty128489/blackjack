@@ -1,0 +1,85 @@
+body{
+  background-color: green;
+}
+
+.titulo{
+  text-align: center;
+  font: 25px/55px Georgia, Times New Roman, serif;
+}
+
+.card{
+  height: 110px;
+  width: 75px;
+  margin: 5px;
+  position: relative;
+  background: #fff;
+  border-radius: 10px;
+  -webkit-box-shadow: 3px 3px 7px rgba(0,0,0,0.3);
+  box-shadow: 3px 3px 7px rgba(0,0,0,0.3);
+  float: left;
+}
+
+
+
+.card p{
+  text-align: center;
+  font: 25px/55px Georgia, Times New Roman, serif;
+}
+
+.palocorazon, .palodiamante{
+  color: red;
+}
+
+.palodiamante:before, .palodiamante:after{
+  content: "♦";
+  color: red;
+}
+
+.palocorazon:before, .palocorazon:after {
+  content: "♥";
+  color: red;
+}
+       
+.palotrebol:before, .palotrebol:after {
+  content: "♣";
+  color: black;
+}
+       
+.palopica:before, .palopica:after {
+  content: "♠";
+  color: black;
+}
+
+div[class*='palo']:before{
+  position:absolute;
+  font-size: 35px;
+  left: 5px;
+  top: 5px
+}
+
+div[class*='palo']:after{
+  position:absolute;
+  font-size: 35px;
+  right: 5px;
+  bottom: 5px;
+}
+
+.cartas{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.boton{
+  background-color: rgb(185, 242, 196);
+  border-radius: 5px;
+  margin-top: 10px;
+  padding: 5px;
+  box-shadow: 3px 3px 7px rgba(0,0,0,0.3);
+  
+}
+
+#croupier, #jugador{
+  width: 100%;
+  clear: both;
+}
