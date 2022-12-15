@@ -4,8 +4,7 @@
         <meta charset="utf-8">
         <title>Blackjack</title>
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
-        <link href="Blackjack.css" rel="stylesheet" type="text/css">
-       
+        <link href="Blackjack.css" rel="stylesheet" type="text/css"> 
     </head>
 
     <body>
@@ -33,6 +32,17 @@
 
         <div id="croupier"><h2>croupier</h2></div>
         <div id="jugador"><h2>jugador</h2></div>
+
+        <!--Creamos los botones de juego pedir carta y plantarse-->
+        <div class="botones_juego">
+            <div id="boton_pedir">
+                <button onclick="pedir()">Pedir carta</button>
+            </div>
+            <div id="boton_plantarse">
+                <button onclick="plantarse()">Plantarse</button>
+            </div>
+        </div>
+
     <script src="Blackjack.js"></script>
     </body>
 </html>

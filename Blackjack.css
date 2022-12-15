@@ -80,6 +80,14 @@ div[class*='palo']:after{
 }
 
 #croupier, #jugador{
+  
   width: 100%;
   clear: both;
+}
+
+
+
+#boton_pedir, #boton_plantarse{
+  display: none;
+
 }
