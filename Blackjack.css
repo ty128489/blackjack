@@ -76,7 +76,7 @@ div[class*='palo']:after{
   margin-top: 10px;
   padding: 5px;
   box-shadow: 3px 3px 7px rgba(0,0,0,0.3);
-  
+  text-align: center;
 }
 
 #croupier, #jugador{
