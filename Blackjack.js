@@ -76,11 +76,8 @@ function añadir_carta(tablero){
 function pedir(){
    let carta = añadir_carta(jugador);
    suma_jugador += carta[0].valor;
-   if (suma_jugador > 21){
-
-      alert('Has perdido, gana el casino');
-   }
-
+   
+   const timeoutId = setTimeout(mas_de_21, 1000);
 }
 
 function plantarse(){
@@ -90,6 +87,19 @@ function plantarse(){
       carta = añadir_carta(croupier);
       suma_croupier += carta[0].valor;
    }
+   
+   const timeoutId = setTimeout(ganador, 1000);
+}
+
+function mas_de_21(){
+   if (suma_jugador > 21){
+      alert('Has perdido, gana el casino');
+      const timeoutId = setTimeout(refrescar,1000);
+   }
+   
+}
+
+function ganador(){
    if (suma_croupier > 21){
       alert('Has ganado!!!');
    }else if (suma_jugador < suma_croupier){
@@ -101,8 +111,10 @@ function plantarse(){
    }else{
       alert('Err144');
    }
-   //window.location.reload();
+   const timeoutId = setTimeout(refrescar,1000);
 }
 
-
+function refrescar(){
+   window.location.reload();
+}
 
